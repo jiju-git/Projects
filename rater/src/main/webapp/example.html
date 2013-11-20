@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Rater Example</title>
+<style>
+hr {
+ margin: 20px 0px 30px 0px;
+}
+</style>
+<script src="statics/rater.js"></script>
+<link rel="stylesheet" type="text/css" href="statics/rater.css">
+</head>
+<body>
+<h1 align="center"> Script for (Review ) Rate control on web page. </h1>
+
+<div style="height:40px;">Hover over or click on the icon sets.</div>
+
+
+<b>Example 1:</b> Initial weight = 0 , no clear option | <button name="test" onclick="alert(rater.getRate('rateContainter1'))">Get Selected Rate</button>
+<div id="rateContainter1" class="rating" weight="0"> </div>
+<script>
+rater.init('rateContainter1');
+</script>
+
+<hr/>
+<b>Example 2:</b> Initial rating = 3, with clear option | <button name="test" onclick="alert(rater.getRate('rateContainter2'))">Get Selected Rate</button> 
+<div id="rateContainter2" class="rating" weight="3"></div> 
+<script>
+rater.init('rateContainter2',true);
+</script>
+<hr/>
+
+<b>Example 3:</b> Initial rating = 4 , clear option true. | <button name="test" onclick="alert(rater.getRate('rateContainter3'))">Get Selected Rate</button> 
+
+<div id="rateContainter3" class="rating" weight="4"> </div>
+</body>
+<script>
+rater.init('rateContainter3',true);
+</script>
+</html>

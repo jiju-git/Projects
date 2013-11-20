@@ -1,0 +1,22 @@
+.rating .clear {
+    height: 35px;
+    width: 35px;
+}
+.rating .gold {
+    background: url("imgs/gold.png") no-repeat;
+}
+
+.rating .gray {
+    background: url("imgs/gray.png") no-repeat;
+}
+.rating {
+    height: 35px;
+    width: 230px;
+}
+.rating div{
+    cursor: pointer;
+    float: left;
+    margin: 1px 2px 1px 1px;
+    width: 35px;
+    
+}

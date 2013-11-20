@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Rater Example</title>
+<script src="statics/rater.js"></script>
+<link rel="stylesheet" type="text/css" href="statics/rater.css">
+</head>
+<body>
+<div id="rateContainter1" class="rating" weight="0"> </div>
+<button name="test" onclick="alert(rater.getRate('rateContainter1'))">Get Rate Weight</button> 
+</body>
+<script>
+rater.init('rateContainter1');
+</script>
+
+<div id="rateContainter2" class="rating" weight="3"> </div>
+<button name="test" onclick="alert(rater.getRate('rateContainter2'))">Get Rate Weight</button> 
+</body>
+<script>
+rater.init('rateContainter2',true);
+</script>
+<div id="rateContainter4" class="rating" weight="4"> </div>
+<button name="test" onclick="alert(rater.getRate('rateContainter4'))">Get Rate Weight</button> 
+</body>
+<script>
+rater.init('rateContainter4',true);
+</script>
+</html>
